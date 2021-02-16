@@ -1,0 +1,315 @@
+body {
+    background-image: url("BackgroundLogo.png");
+    background-attachment: fixed;
+    background-size: 165%;
+    background-position: center 22%;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: Arial;
+}
+a {
+    text-decoration: none;
+}
+section {
+    background: rgba(255, 255, 255, 0.75);
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+}
+.sections {
+    width: 300px;
+    margin-left: 50px;
+}
+header {
+    transform: rotate(90deg) translateY(-100%);
+    position: fixed;
+    color: white;
+    transform-origin: top left;
+    margin-left: -4px;
+    overflow: hidden;
+}
+header img {
+    transform: rotate(180deg);
+    position: relative;
+    width: 100vh;
+    height: 25vh;
+}
+.main {
+    float: right;
+    width: 88%;
+}
+.section-container {
+    margin: auto;
+    margin-top: 5%;
+    width: 80%;
+    display: flex;
+}
+/* Control layout - test styling for now*/
+@media screen and (min-width: 1300px) {
+    .section-container {
+        width: 95%;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .section-container {
+        width: 90%;
+    }
+}
+@media screen and (min-width: 1500px) {
+    .section-container {
+        width: 85%;
+    }
+}
+@media screen and (min-width: 1600px) {
+    .section-container {
+        width: 80%;
+    }
+}
+@media screen and (min-width: 1700px) {
+    .section-container {
+        width: 75%;
+    }
+}
+@media screen and (min-width: 1800px) {
+    .section-container {
+        width: 70%;
+    }
+}
+@media screen and (min-width: 1900px) {
+    .section-container {
+        width: 65%;
+    }
+}
+@media screen and (min-width: 2000px) {
+    .section-container {
+        width: 60%;
+    }
+}
+/* Test end */
+
+h1 {
+    margin-top: -1px;
+    font-size: 100px;
+    font-family: Papyrus;
+    text-align: center;
+}
+h3 {
+    margin-top: -120px;
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+}
+.life {
+    color: rgb(0,32,96);
+}
+.move {
+    position: relative;
+    font-size: 140px;
+    top: 13px;
+}
+.btn-outside {
+    width: 270px;
+    height: 150px;
+    background-color: rgba(72, 124, 228, 0.5);
+    border-radius: .5px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.1)
+                   rgba(72, 124, 228, 0.1);
+}
+.btn-outside:hover {
+    background-color: rgba(72, 124, 228, 0.6);
+    cursor: pointer;
+}
+.btn-outside:active {
+    background-color: rgba(72, 124, 228, 0.8);
+}
+.btn-mid {
+    width: 260px;
+    height: 140px;
+    margin: auto;
+    margin-top: 2px;
+    border-radius: 1px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.1)
+                  rgba(72, 124, 228, 0.1);
+}
+.btn-in {
+    width: 250px;
+    height: 130px;
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 1px;
+    border-style: solid;
+    border-color: rgba(72, 124, 228,.1);
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.btn-in li {
+    display: block;
+    font-size: 28px;
+    margin-top: 6px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(0,32,96);
+}
+.grocery img {
+    margin-top: 15px;
+    width: 275px;
+}
+.healthy .btn-outside {
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.healthy img {
+    width: 300px;
+    height: 265px;
+}
+.meals .btn-outside {
+    margin-left: 50px;
+    margin-top: 40px;
+}
+.meals img {
+    width: 390px;
+    height: 190px;
+    margin-top: 55px;
+}
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width:1300px) {
+    section {
+        height: 100%;
+    }
+    .section-container {
+        width: 700px;
+        display: block;
+    }
+    .sections {
+        display: flex;
+    }
+    .grocery .btn-outside {
+        margin-top: 75px;
+    }
+    .grocery img {
+        margin-top: 0;
+        margin-left: 30px;
+    }
+    .healthy {
+        margin-top: 20px;
+    }
+    .healthy .btn-outside {
+        margin-top: 60px;
+        margin-left: 20px;
+    }
+    .meals {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .meals .btn-outside {
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .meals img {
+        margin-top: 0;
+        margin-left: 30px;
+        width: 350px;
+        height: 150px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    header img {
+        height: 18vh;
+    }
+    h1 {
+        font-size: 70px;
+    }
+    .move {
+        font-size: 90px;
+    }
+    h3 {
+        font-size: 28px;
+        margin-top: -75px;
+    }
+}
+@media screen and (max-width: 930px) {
+    .main {
+        float: none;
+        width: 100%;
+    }
+    header {
+        display: none;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    a.mobile h1 {
+        color: rgb(0,32,96);
+    }
+    .move {
+        font-size: 40px;
+        top: 5px;
+    }
+    h3 {
+        font-size: 18px;
+        margin-top: -10px;
+    }
+    .section-container {
+        width: 100%;
+    }
+    .sections {
+        display: block;
+        width: 100%;
+        margin:0;
+    }
+    .btn-outside {
+        width: 150px;
+        height: 100px;
+    }
+    .btn-mid {
+        width: 140px;
+        height: 90px;
+    }
+    .btn-in {
+        width: 130px;
+        height: 80px;
+    }
+    .btn-in li {
+        font-size: 13px;
+        margin-top: 10px;
+    }
+    .grocery .btn-outside, .meals .btn-outside, .healthy .btn-outside {
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .grocery img {
+        width: 200px;
+        margin: auto;
+    }
+    .healthy img {
+        display: block;
+        margin: auto;
+        width: 200px;
+        height: 200px;
+    }
+    .meals img {
+        width: 200px;
+        height: 80px;
+        margin: auto;
+    }
+    .grocery img, .healthy img, .meals img {
+        margin-top: 10px;
+    }
+    .mobile {
+        display: block;
+    }
+    .desktop {
+         display: none;
+    }
+}
